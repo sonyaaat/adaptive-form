@@ -1,0 +1,50 @@
+.radio {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.radio__text {
+  margin-left: 19px;
+}
+.sett_field::after {
+   
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 0;
+  margin-top: 20px;
+  display: block;
+  width: 398px;
+  height: 0px;
+  border: 1px solid #e6e7e8;
+}
+.sett_wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sett_field{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-bottom: 40px;
+    margin-left: 0;
+}
+.additional__field{
+    display: flex;
+    &:not(:last-child)
+    {
+        margin-bottom: 20px;
+    }
+}
+.additional__text{
+    margin-left: 19px;
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+

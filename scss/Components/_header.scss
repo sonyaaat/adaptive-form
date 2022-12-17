@@ -1,0 +1,95 @@
+.header {
+    background-color: $accent-color;
+  @media screen and (max-width: 949px) {
+    overflow: hidden;
+   
+  }
+ 
+}
+.header__container{
+    position: relative;
+}
+.main_content {
+  @media screen and (max-width: 949px) {
+    display: none;
+  }
+  @media screen and (min-width: 950px) {
+    display: flex;
+  }
+}
+.icon {
+  z-index: 100;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  
+}
+.header__link,.header__email{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 160%;
+color: #FFFFFF;
+}
+.menubar{
+    @media screen and (min-width:950px) {
+        display: none;
+      }
+    height: 50px;
+    background-color:$accent-color ;
+    
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width:950px) {
+       justify-content: start;
+       margin-left: auto;
+      }
+}
+.avatar{
+    border-radius: 100px;
+    margin-right: 30px;
+}
+.header__nav{
+    @media screen and (min-width:950px) {
+        display: flex;
+        align-items: center;
+      }
+}
+.header__links{
+    @media screen and (min-width:950px) {
+        display: flex;
+        align-items: center;
+      }
+}
+.header__link:first-child{
+    @media screen and (min-width:950px) {
+        margin-left: 300px;
+      }
+   
+}
+.header__link:nth-child(2){
+    @media screen and (min-width:950px) {
+        margin-left: 146px;
+      }
+}
+.header__link:hover,:focus{
+    color: black;
+}
+.main__container{
+    @media screen and (min-width:950px) {
+        display: flex;
+      }
+}
+.form__right{
+    @media screen and (min-width:950px) {
+        margin-left: 146px;
+        margin-top: 33px;
+      }
+}
+.sett_field{
+    
+}

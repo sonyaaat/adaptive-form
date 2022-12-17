@@ -1,0 +1,70 @@
+.main__header{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+margin-top: 15px;
+margin-bottom: 18px;
+
+}
+.label{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 9px;
+}
+.form__selection{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+margin-right: 30px;
+}
+.form__field{
+    margin-bottom: 34px;
+    &__measure{
+        margin-bottom: 47px;
+    }
+    &__settings{
+        margin-bottom: 47px;
+       
+    }
+}
+.data_time{
+    display: flex;
+}
+.sett_input{
+    margin-left: auto;
+}
+.form__file{
+    margin-bottom: 47px;
+}
+.button{
+    margin: 0 auto;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 225px;
+height: 60px;
+border-radius: 5px;
+background-color: $accent-color;
+color: white;
+border:none;
+margin-bottom: 60px;
+&:hover,:focus{
+color: aqua;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+
+}
+}

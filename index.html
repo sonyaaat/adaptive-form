@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss//main.css" />
+  </head>
+  <body>
+    <header class="header ">
+        <div class="container header__container">
+        <div class="menubar">
+            <a class="icon" onclick="myFunction()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                    <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z"/>
+                    <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </a>
+        </div>
+      <div class="container main_content" id="#main_content">
+         <nav class="header__nav">
+            <ul class="header__links">
+              <li class="header__link"><a>Товары</a></li>
+              <li class="header__link"><a>Клиенты</a></li>
+            </ul>
+          </nav>
+          <div class="profile">
+            <img class="avatar" src="./img/photo_2022-10-24_23-51-14.jpg" alt="avatar" width="40px" height="40px"/>
+            <p class="header__email">admin@okguru.com</p>
+          </div>
+      </div>
+    </div>
+    </header>
+    <main>
+     <form class="container">
+        <h1 class="main__header">Создание мероприятия</h1>
+        <div class="main__container">
+            
+            <div class="form__left">
+                <div class="form__field"></div>
+                <div class="form__field">
+                    <label >
+                        <p class="label">Название мероприятия</p>
+                        <input type="text"  class="input__text" class="input__text" placeholder="Введите название" />
+                    </label>
+                </div>
+                <div class="form__field">
+                    <label>
+                        <p class="label">Имя ведущего</p>
+                        <input type="text"class="input__text"  placeholder="Введите имя" />
+                    </label>
+                </div>
+                
+                <div class="form__field">
+                    <label >
+                        <p class="label">Дата и время начала</p>
+                        <div class="data_time">
+                        <input type="date" min="1920-01-01" class="input__data input__data__left" max="2020-01-01" />
+                        <input type="time" class="input__data" />
+                       </div>
+                    </label>
+                </div>
+                
+                <div class="form__field">
+                    <label>
+                        <p class="label">Ссылка на YouTube трансляцию</p>
+                        <input class="input__text" type="text" placeholder="Вставьте ссылку" />
+                    </label>
+                </div>
+                
+                <div class="form__field">
+                    <label>
+                        <p class="label">Ссылка на заглушку</p>
+                        <input type="text" class="input__text" placeholder="Вставьте ссылку" />
+                    </label>
+                </div>
+            
+                <div class="form__field">
+                    <label>
+                    <p class="label"> Внешняя кнопка (ссылка)</p>
+                        <input type="text" class="input__text" placeholder="Вставьте ссылку" />
+                    </label>
+                </div>
+            
+            </div>
+        <div class="form__right">
+            <div class="form__field__measure">
+                <p class="label">Доступ к мероприятию:</p>
+            <label class="radio">
+            <input type="radio" name="color" value="password" checked />
+            <p class="form__selection radio__text">По паролям</p>
+            </label>
+            <label class="radio">
+            <input type="radio" name="color" value="open" />
+            <p class="form__selection radio__text">Открытый</p>
+            </label>
+            </div>
+            
+            <div class="form__field__settings">
+                <div class="sett_wrapper">
+                    <label class="sett_field">
+                        <input class="sett_input" type="checkbox" name="params" value="chat" checked />
+                        <div class="custom-check-icon"></div>
+                        <p class="form__selection" >Чат при запуске мероприятия</p>
+                    </label>
+                        
+                </div>
+                <div class="sett_wrapper">
+                    <label class="sett_field">
+                        <input class="sett_input" type="checkbox" name="params" value="basket" checked />
+                        <div class="custom-check-icon"></div>
+                        <p class="form__selection">Кликабельные ссылки от пользователей в чате</p>
+                    </label>
+                </div>
+                <div class="sett_wrapper">
+                    <label class="sett_field">
+                        <input class="sett_input" type="checkbox" name="params" value="basket" checked />
+                        <div class="custom-check-icon"></div>
+                        <p class="form__selection">Корзина</p>
+                    </label>
+                </div>
+                </div>
+                
+                    <div class="form__file">
+                        <p class="label">Презентация</p>
+                        <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                        <label for="input__file" class="input__file-button">
+                            
+                              <span class="input__file-button-text">Загрузить PDF</span>
+                              <svg class="input__file-icon-wrapper" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+                              </svg>
+                        </label>
+                     </div>
+                     <div>
+                        <p class="label">Дополнительные обязательные поля при входе:</p>
+                    <label class="additional__field">
+                    <input class="additional_input" type="checkbox" name="additionals" value="surname" checked />
+                    <div class="custom-check-icon2"></div>
+                    <p class="additional__text">Фамилия</p>
+                    </label>
+                    <label class="additional__field">
+                    <input class="additional_input" type="checkbox" name="additionals" value="city" />
+                    <div class="custom-check-icon2"></div>
+                    <p class="additional__text">Город</p>
+                    </label>
+                    <label class="additional__field">
+                    <input class="additional_input" type="checkbox" name="additionals" value="email" checked />
+                    <div class="custom-check-icon2"></div>
+                    <p class="additional__text">Почта</p>
+                    </label>
+                    </div>
+                    </div>
+                </div>
+                
+                
+            
+       </div>
+    </div>
+    <button type="submit" class="button">Сохранить</button>
+     </form>
+    </main>
+    <footer >
+        <p class="footer">Trade Broadcast 2022 &#169</p>
+    </footer>
+    <script src="./js//fileUpload.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
